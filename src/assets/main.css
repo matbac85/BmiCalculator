@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .heading-xl {
+    @apply text-[4rem] font-semibold text-gunmetal leading-[110%];
+  }
+
+  .heading-l {
+    @apply text-5xl font-semibold text-gunmetal leading-[110%];
+  }
+
+  .heading-m {
+    @apply text-2xl font-semibold text-gunmetal leading-[110%];
+  }
+
+  .heading-s {
+    @apply text-xl font-semibold text-gunmetal leading-[110%];
+  }
+
+  .body-m {
+    @apply text-base font-normal leading-normal text-gunmetal;
+  }
+
+  .body-m-bold {
+    @apply text-base font-semibold leading-normal text-gunmetal;
+  }
+
+  .body-s {
+    @apply text-sm font-normal leading-normal text-gunmetal;
+  }
+
+  .input {
+    @apply border rounded-xl border-borders ring-inset placeholder-borders active:border-blue;
+  }
+
+  .radio {
+    @apply w-8 h-8 border rounded-full appearance-none border-borders checked:border-8 checked:border-borders checked:bg-blue hover:border-blue;
+  }
+}
+
+@layer utilities {
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .header-intro-grid {
+    grid-column: 1/13;
+    grid-row: 1/8;
+  }
+
+  .header-grid-md {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .header-form-grid {
+    grid-column: 2/12;
+    grid-row: 6/13;
+  }
+
+  .header-form-grid-md {
+    grid-row: 5 / 12;
+  }
+
+  .gradient-intro {
+    background: linear-gradient(
+      290.1deg,
+      #d6e6fe 0%,
+      rgba(214, 252, 254, 0) 100%
+    );
+  }
+
+  .gradient-advices {
+    background: linear-gradient(
+      290.1deg,
+      rgba(214, 230, 254, 0.25) 0%,
+      rgba(214, 252, 254, 0) 100%
+    );
+  }
+
+  .shadow-limitation-card {
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  }
+}
