@@ -1,29 +1,16 @@
-# bmi-calculator
+# bmi-calculator app
 
-This template should help get you started developing with Vue 3 in Vite.
+[Link to the app](https://matbac85.github.io/BmiCalculator/)
 
-## Recommended IDE Setup
+## BMI Calculator App using Vue 3 Composition API and tailwind CSS
+This is a user-friendly app designed to help you easily calculate your Body Mass Index (BMI) and gain insights into maintaining a healthy lifestyle. Whether you prefer metric or imperial measurements, this app provides a seamless experience for users worldwide.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Features
 
-## Customize configuration
+Your users should be able to:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- Select whether they want to use metric or imperial units
+- Enter their height and weight
+- See their BMI result, with their weight classification and healthy weight range
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
