@@ -70,6 +70,7 @@ const idealWeightCalc = () => {
   <form
     class="flex flex-col gap-6 p-6 rounded-2xl bg-pure-white drop-shadow-3xl header-form-grid md:header-form-grid-md md:gap-8 md:h-fit xl:gap-8 xl:p-8"
     @keyup.enter="bmiCalc"
+    @submit.prevent="bmiCalc"
   >
     <h2 class="tracking-tighter heading-m">Enter your details below</h2>
     <div class="flex gap-6">
